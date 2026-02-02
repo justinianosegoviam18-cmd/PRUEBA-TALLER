@@ -1,70 +1,86 @@
-/* Reset básico */
-* {
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
 }
 
-/* Body */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #c3ec52, #0ba360);
-    color: #fff;
+/* ENCABEZADO */
+header {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* MENÚ */
+nav {
+    background-color: #333;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
-/* Contenedor */
-.container {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+nav a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
 }
 
-/* Header */
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+nav a:hover {
+    background-color: #555;
 }
 
-header p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+/* PRODUCTOS */
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
 }
 
-/* Main */
-main p {
-    margin: 20px 0;
-    font-size: 1.2em;
-}
-
-.icon {
-    width: 80px;
-    margin-bottom: 20px;
-}
-
-button {
-    padding: 12px 25px;
-    font-size: 1em;
-    background-color: #ffbb33;
-    color: #333;
-    border: none;
+.producto {
+    background-color: white;
+    width: 250px;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 15px;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    margin: 10px 0;
+}
+
+.producto p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.producto button {
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
-button:hover {
-    background-color: #ffdd66;
+.producto button:hover {
+    background-color: #d35400;
 }
 
-/* Footer */
+/* PIE */
 footer {
-    margin-top: 30px;
-    font-size: 0.9em;
-    color: #eee;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
 }
